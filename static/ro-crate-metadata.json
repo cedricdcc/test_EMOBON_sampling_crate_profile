@@ -1,0 +1,198 @@
+{
+    "@context": "https://w3id.org/ro/crate/1.1/context",
+    "@graph": [
+      {
+        "@id": "ro-crate-metadata.json",
+        "@type": "CreativeWork",
+        "conformsTo": [
+          {
+            "@id": "https://w3id.org/ro/crate/1.1"
+          },
+          {
+            "@id": "https://www.researchobject.org/ro-crate/1.2-DRAFT/profiles"
+          }
+        ],
+        "about": {
+          "@id": "./"
+        },
+        "creator": {
+          "@id": "https://orcid.org/0000-0001-6387-5988"
+        },
+        "license": {
+          "@id": "http://spdx.org/licenses/CC0-1.0"
+        }
+      },
+      {
+        "@id": "./",
+        "@type": "Dataset",
+        "author": [
+          {
+            "@id": "https://orcid.org/0000-0001-6387-5988"
+          }
+        ],
+        "datePublished": "2023-03-15T11:35:50Z",
+        "description": "This is the Profile Crate for EMOBON Sampling crates. It is a RO-Crate that contains a profile.jsonld file that describes the structure of the crate. It also contains a README.md file that describes the profile and provides examples of how to use it.",
+        "hasPart": [
+          {
+            "@id": "https://w3id.org/ro/crate/1.1/context"
+          },
+          {
+            "@id": "http://schema.org/ImageObject"
+          },
+          {
+            "@id": "http://schema.org/HowTo"
+          },
+          {
+            "@id": "https://www.researchobject.org/ro-crate/1.2-DRAFT/profiles"
+          },
+          {
+            "@id":"https://orcid.org/0000-0001-6387-5988"
+          },
+          {
+            "@id":"README.md"
+          },
+          {
+            "@id": "example/"
+          },
+          {
+            "@id":"ro-crate-preview.html"
+          }
+        ],
+        "mentions": [
+          {
+            "@id": "https://pypi.org/project/rocrate/"
+          }
+        ],
+        "identifier": "uri here that will redirect to this file",
+        "license": {
+          "@id": "https://spdx.org/licenses/BSD-3-Clause"
+        },
+        "name": "EMOBON Sampling RO-Crate profile",
+        "publisher": {
+          "@id": "https://github.com/vliz-be-opsci/"
+        },
+        "subjectOf": {
+          "@id": "ro-crate-preview.html"
+        },
+        "version": "1.0.2",
+        "workExample": {
+          "@id": "example/"
+        }
+      },
+      {
+        "@id": "example/",
+        "@type": "Dataset",
+        "name": "Example RO-Crate following this profile",
+        "license": {
+          "@id": "http://spdx.org/licenses/CC0-1.0"
+        },
+        "subjectOf": [
+          {
+            "@id": "example/ro-crate-metadata.json"
+          },
+          {
+            "@id": "example/ro-crate-preview.html"
+          }
+        ]
+      },
+      {
+        "@id": "example/ro-crate-preview.html",
+        "@type": "CreativeWork",
+        "name": "Preview of example RO-Crate",
+        "encodingFormat": "text/html"
+      },
+      {
+        "@id": "ro-crate-preview.html",
+        "@type": "CreativeWork",
+        "name": "Preview of profile RO-Crate",
+        "encodingFormat": "text/html",
+        "about": "./"
+      },
+      {
+        "@id": "https://www.researchobject.org/ro-crate/1.2-DRAFT/profiles",
+        "@type": "Guide",
+        "name": "Profile Crate",
+        "version": "1.2-DRAFT"
+      },
+      {
+        "@id": "example/ro-crate-metadata.json",
+        "@type": "CreativeWork",
+        "conformsTo": [
+          {"@id": "https://w3id.org/ro/crate/1.1"}, 
+          {"@id": "URI to this profile"}
+        ],
+        "encodingFormat": "application/json",
+        "license": {
+          "@id": "http://spdx.org/licenses/CC0-1.0"
+        }
+      },
+      {
+        "@id": "https://orcid.org/0000-0001-6387-5988",
+        "@type": "Person",
+        "name": "Cedric Decruw"
+      },
+      {
+        "@id": "https://pypi.org/project/rocrate/",
+        "@type": "SoftwareApplication",
+        "description": "Python library to create/parse RO-Crate (Research Object Crate) metadata.",
+        "identifier": "https://doi.org/10.5281/zenodo.5653266",
+        "name": "ro-crate-py",
+        "url": "https://pypi.org/project/rocrate/",
+        "version": "0.5.0"
+      },
+      {
+        "@id": "https://spdx.org/licenses/BSD-3-Clause",
+        "@type": "CreativeWork",
+        "description": "BSD 3-Clause License\n\nCopyright (c) 2019-2020, The University of Manchester, HITS gGmbH and workflowhub.eu contributors\nAll rights reserved.\n\nRedistribution and use in source and binary forms, with or without\nmodification, are permitted provided that the following conditions are met:\n\n1. Redistributions of source code must retain the above copyright notice, this\n   list of conditions and the following disclaimer.\n\n2. Redistributions in binary form must reproduce the above copyright notice,\n   this list of conditions and the following disclaimer in the documentation\n   and/or other materials provided with the distribution.\n\n3. Neither the name of the copyright holder nor the names of its\n   contributors may be used to endorse or promote products derived from\n   this software without specific prior written permission.\n\nTHIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS \"AS IS\"\nAND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE\nIMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE\nDISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE\nFOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL\nDAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR\nSERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER\nCAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,\nOR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE\nOF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.\n",
+        "identifier": "BSD-3-Clause",
+        "name": "BSD 3-Clause \"New\" or \"Revised\" License"
+      },
+      {
+        "@id": "https://w3id.org/ro/crate/1.1",
+        "@type": "Guide",
+        "name": "RO-Crate specification",
+        "version": "1.1.1"
+      },
+      {
+        "@id": "https://w3id.org/ro/crate/1.1/context",
+        "@type": "CreativeWork",
+        "encodingFormat": [
+          "application/ld+json",
+          {
+            "@id": "http://www.w3.org/ns/json-ld#Context"
+          }
+        ],
+        "name": "RO-Crate JSON-LD Context",
+        "version": "1.1.1"
+      },
+      {
+        "@id": "http://schema.org/HowTo",
+        "@type": "DefinedTerm",
+        "description": "Instructions that explain how to achieve a result by performing a sequence of steps.",
+        "name": "HowTo",
+        "termCode": "HowTo"
+      },
+      {
+        "@id": "http://schema.org/ImageObject",
+        "@type": "DefinedTerm",
+        "description": "An image file",
+        "name": "ImageObject",
+        "termCode": "ImageObject"
+      },
+      {
+        "@id": "http://spdx.org/licenses/BSD-3-Clause", 
+        "@type": "DefinedTerm",
+        "termCode": "BSD-3-Clause",
+        "identifier": "BSD-3-Clause",
+        "name": "BSD 3-Clause \"New\" or \"Revised\" License (BSD-3-Clause)",
+        "url": "https://opensource.org/licenses/BSD-3-Clause"
+      },
+      {
+        "@id": "http://www.w3.org/ns/json-ld#Context",
+        "@type": "DefinedTerm",
+        "name": "JSON-LD Context",
+        "url": "https://www.w3.org/TR/json-ld/"
+      }
+    ]
+  }
+  
